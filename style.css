@@ -1,0 +1,613 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+	/* margin: 0px, padding: 0px ???*/
+	box-sizing: border-box;
+	max-width: 100%;
+	overflow-wrap: break-word;
+}
+
+html, body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #1C3142;
+}
+
+/* NAVIGATION */
+
+h1{
+	font-family: 'Noticia Text', serif;
+	font-size: 43px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 0px;
+}
+
+.navbar-brand{
+	padding: 5px 5px 0 0;
+	display: 0;
+}
+
+.intro-container .row{
+	display:flex;
+	padding: 0;
+
+}
+
+/*---------- Hamburger icon menu only to appear on small screen ---------  */
+.fa-bars{
+	outline:0;
+	color: white;
+	border:none;
+	transform: 0.3s ease;
+
+}
+
+.fa-bars:focus {outline:0;}
+
+.fa-bars:hover{transform: scale(1.2);}
+}
+
+
+
+/*---------- End of hamburger icon ---------  */
+
+
+.typewrite{
+	color: white;
+}
+
+h2 {
+	font-family: 'Noticia Text', serif;
+	font-size: 46px;
+	color: #D2D4D1;
+	font-weight: bold;
+	margin-top:0px;
+}
+
+.header2{
+	font-family: 'Noticia Text', serif;
+	font-size: 30px;
+	color: #D2D4D1;
+	font-weight: bold;
+	margin-top:0px;
+	display: inline-block;
+}
+
+.beautify-h2{
+	font-family: 'Noticia Text', serif;
+	color: #50C4ED;
+	font-weight: bold;
+	margin-top:0px;
+
+}
+
+
+.header3{
+	font-family:'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 25px;
+	color: #8293A1;
+	padding-left: -5px;
+	margin-bottom:0;
+	display: inline-block;
+
+}
+
+h3{
+	font-family:'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 19px;
+	color: #8293A1;
+	padding-top: 15px;
+	margin-bottom:0;
+
+}
+.navbar-nav{
+	padding: 10px 0 0 200px;
+
+}
+
+.nav-link{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #516371;
+	display: flex;
+}
+
+.nav-link:hover{
+	color: #50C4ED;
+
+}
+
+.nav-link:active{
+	color:white;
+}
+
+
+.nav-item a.active{
+	color: #50C4ED;
+}
+
+/*----------- END NAVIGATION------------ */
+
+
+
+/* HOME */
+/* intro-container */
+.intro-container{padding: 3% 3% 0% 5%;}
+.col-sm-4{padding-bottom: 10px;}
+
+
+
+.intro-container img{border-radius: 50%}
+
+
+.intro-container h1{font-size: 80px;}
+
+.intro-container h2{font-size: 46px;}
+
+
+.btn{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    top: 50%; left: 50%; right: 0;
+    font-family:'Noticia Text', serif;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.btn1{
+	background-color: #3D5495;
+	transition: 0.3s ease;
+
+}
+.btn2{
+	background-color: #50C4ED;
+	transition: 0.3s ease;
+}
+.btn3{
+	background-color: #567B96;
+	transition: 0.3s ease;
+}
+
+.btn1:hover{opacity: 0.5;}
+.btn2:hover{opacity: 0.5;}
+.btn3:hover{opacity: 0.5;}
+
+
+p{
+	padding: 5px;
+	font-size: 13px;
+	color: #8293A1;
+}
+
+/* END intro-container */
+/* END HOME */ 
+
+.header1{
+	font-size: 70px;
+	font-style: none;
+	font-family: 'Noticia Text', serif; 
+	color: #8293A1;
+	text-align: center;
+}
+
+
+/* -------------- END (icon) -------------- */
+.responsive{
+	width: 100%;
+	height:auto;
+}
+
+/*--------------------------------------Portfolio container---------------------------------------*/
+/*---------Porfolio container--------*/
+.portfolio-container{
+	padding: 3% 3% 0% 3%;	
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 15px;
+}
+
+.content img{
+	transition: all 0.3s ease;
+	display: inline-flex;
+	box-shadow: 5px 5px black;
+}
+
+.content img:hover{
+	transform: scale(1.1);
+	
+}
+
+.content h3{
+	padding-top: 20px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .col-sm-4 {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-sm-4 {
+    width: 100%;
+  }
+}
+
+/* ---------- END portfolio container ------- */
+
+/* ------------------ VIEW MORE IMAGES button----------------*/
+.view-more-container{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	padding-bottom: 100px;
+}
+
+#showprojects {
+    background: #567B96;
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 30px;
+    transition: all 0.25s ease-out;
+}
+#showprojects:focus {outline:0;}
+
+#showprojects:hover {
+    letter-spacing: 0.3em;
+    background-color: white;
+    color: #567B96;
+}
+
+
+/*------------END LOAD MORE IMAGES button------------*/
+/* --------------------------- END modal class -------------------------------------------------------------*
+
+
+
+/*--------------SKILL SECTION--------------- */
+.skills-container{
+	padding: 3% 3% 0% 3%;
+}
+
+.skills-headers{
+	font-family: 'Noticia Text', serif;
+	border-bottom: 1px solid;
+	color: #8293A1;
+	font-size:16px;
+}
+
+.skills-container ul, li{   
+	margin: 0px;
+	padding:0px;
+}
+.skills-container li{
+	list-style-type: none;
+	color: white;
+	font-size: 14px;
+	padding-bottom: 2px;
+}
+
+/*--------------SKILL SECTION ENDS--------------- */
+
+
+/*------ CONTACT-------*/
+
+.social-bar{
+	font-size: 30px;
+	margin: 0px 10px 15px 10px;
+	text-align: center;
+}
+
+
+
+
+/*--------------Work Experience: Timeline section--------------- */
+/* This is the line of the timeline being traced in the center of the page */
+.timeline-container{
+	padding: 3% 3% 0% 3%;
+}
+
+.timeline:before{
+	content:'';
+	position:absolute;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	background-color: #c5c5c5;
+}
+.timeline {
+	position:relative;
+	margin: 50px auto;
+	padding: 10px 0;
+	width: 100%;
+}
+
+.timeline ul li .job-description{
+	margin: 10px 0 0;
+	padding:0;
+
+}
+
+.timeline ul{
+	margin:0;
+	padding:0;
+}
+
+.timeline ul li{
+	list-style: none;
+	position:relative;
+	width: 50%;
+	padding:20px 40px;
+}
+
+/*This is so it alternates sides when putting job on one side, the next time it will be on the other side 
+hence using even and odd*/
+.timeline ul li:nth-child(odd){
+	float: left;
+	text-align: right;
+	clear: both; /* means floating the elements are not allowed to float on both sides*/
+}
+
+
+.timeline ul li:nth-child(even){
+	float: right;
+	text-align: left;
+	clear: both;
+}
+
+/* This is the little ball indicator that goes on the timeline for job listed on the left*/
+.timeline ul li:nth-child(odd):before{
+	content:'';
+	position:absolute;
+	width: 10px;
+	height: 10px;
+	background: #50C4ED;
+	border-radius: 50%;
+	top:34px;
+	right: -6px;
+}
+
+/* This is the little ball indicator that goes on the timeline for job listed on the right*/
+.timeline ul li:nth-child(even):before{
+	content:'';
+	position:absolute;
+	width: 10px;
+	height: 10px;
+	background: #50C4ED;
+	border-radius: 50%;
+	top:34px;
+	left: -4px;
+}
+
+.timeline ul li h4{
+	margin: 0;
+	padding:5px 10px;
+	font-size: 15px;
+	color: white;
+	background-color: #50C4ED;
+	border-radius: 8px;
+	text-align: center;
+	font-family: 'Noticia Text', serif;
+}
+
+.timeline ul li h3{
+	margin:0;
+	padding:0;
+	font-size: 25px;
+	font-weight: bold;
+	color: #1261A0;
+}
+
+.timeline ul li h5{
+	margin:0;
+	padding:0;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+}
+
+
+.content{
+	padding-bottom: 20px;
+}
+
+
+/* RESIZE WINDOW */ 
+@media screen and (min-width: 300px) and (max-width: 700px){
+	.timeline ul li:nth-child(odd):before{
+		display: none;
+	}
+	.timeline ul li:nth-child(even):before{
+		display: none;
+	}
+	.timeline:before{
+		display: none;
+	}
+
+	.timeline ul li{
+		display: flex;
+		width: 100%;
+		clear: none; /* means floating the elements are not allowed to float on both sides*/
+		float: left;
+	}
+
+	.timeline .content{
+		padding: 0;
+	}
+}
+
+
+
+/*--------------Timeline section ends--------------- */
+
+
+/*New Footer */
+.footer{
+	background-color: #50C4ED;
+	padding: 20px 0 0 0;
+	font-family:'Open Sans', sans-serif;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.footer ul{
+	list-style:none;
+	text-indent: -35px;
+}
+
+
+.footer-col{
+	width: 50%;
+	padding: 0 15px;
+}
+
+
+.footer-col h4{
+	font-size: 20px;
+	color: white;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	position: relative;
+	letter-spacing: 0.2em;
+}
+
+.footer-col h4::before{
+	content:'';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #567B96;
+	height:2px;
+	box-sizing: border-box;
+	width: 150px;
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: black;
+	display: block;
+	transition: all 0.3s ease;
+
+}
+
+.footer-col ul li a:hover{
+	color: black;
+	padding-left: 8px;
+}
+
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: lightgrey;
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: black;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	transform:scale(0.7);
+
+}
+
+
+.copyright-footer{
+	width: 100%;
+	font-family:'Open Sans', sans-serif;
+	color: black;
+	background-color: #567B96;
+	text-align: center;
+	font-size: 14px;
+	padding: 15px;
+}
+
+
+/* ------------------ Small Size --------------------- */
+@media screen and (min-width:300px) and (max-width:580px){
+	
+	.typewrite{
+		font-size: 38px;
+	}
+	.header1{
+		font-size: 45px;
+
+	}
+	.header2, .beautify-h2{
+		font-size: 30px;
+
+	}
+	.header3{
+		font-size: 16px;
+
+	}
+	.navheader{
+		font-size:;
+	}
+	.navbar-nav{
+		padding: 0;
+
+	}
+	.navbar .navbar-expand-lg{
+		display: inline-flex;
+	}
+
+	.intro-container{
+		padding: 3% 5% 0% 5%;}
+
+	.footer{
+		width: 100%;
+		overflow: hidden;
+	}
+	.footer .footer-col{
+		width:100%;
+	}
+
+
+
+}
+

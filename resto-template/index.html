@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Zeina Adi's Restaurant Template</title>
+
+  
+	<!-- For social media icons -->
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+	
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<section class ="home-container">
+		<header>
+			<h2 class = "page-name">Restaurant Logo</h2>
+			<div class = "toggle"></div>
+		</header>
+
+		<video src = "landing-video1.mp4" muted loop autoplay></video>
+		<div class ="text">
+			<a name= "home"><h2 class ="h2text">Restaurant Name</h2></a>
+			<h3 class ="h3text">Restaurant Slogan</h3>
+			<a class = "btn" href = "gallery.html">View Our Gallery</a>
+		</div>
+		<ul class ="social-links">
+			<li><a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a></li>
+			<li><a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook"></a></li>
+			<li><a href="https://twitter.com/" target="_blank" class="fab fa-twitter"></a></li>
+		</ul>
+	</section>
+
+
+	<div class ="navbar">
+		<ul>
+			<li><a href = "#home">Home</a></li>
+			<li><a href = "#">Menu</a></li>
+			<li><a href = "gallery.html">Gallery</a></li>
+			<li><a href = "#">Catering</a></li>
+			<li><a href = "#">Make a reservation</a></li>
+			<li><a href = "#">Contact</a></li>
+		</ul>
+	</div>
+
+
+
+	<script>
+		const navbarToggle = document.querySelector('.toggle')
+		const homeContainer = document.querySelector('.home-container')
+
+		navbarToggle.addEventListener('click', ()=>{
+			navbarToggle.classList.toggle('active')
+			homeContainer.classList.toggle('active')
+		})
+
+    </script>
+
+	</script>
+
+
+
+</body>
+
+
+</html>

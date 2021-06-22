@@ -1,0 +1,507 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+	/* margin: 0px, padding: 0px ???*/
+	box-sizing: border-box;
+	background-color: #1C3142;
+	
+}
+html, body{
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 80px;
+}
+
+/* NAVIGATION */
+
+/*font-family: 'Noticia Text', serif; */ 
+
+.container-fluid{
+	margin: 2% 15% 2% 15%;	
+}
+
+h1{
+	font-family: 'Noticia Text', serif;
+	font-size: 43px;
+	font-weight: bold;
+	color: #8293A1;
+	margin-bottom: 0px;
+	
+}
+
+/*---------- Hamburger icon menu only to appear on small screen ---------  */
+.fa-bars{
+	outline:none;
+	color: white;
+	border:none;
+}
+
+
+.navbar-toggle.collapsed{
+	border: none;	
+}
+.navbar-toggle.collapsed:hover{
+	opacity: 0.5;
+}
+
+
+/*---------- End of hamburger icon ---------  */
+
+
+.typewrite{
+	color: white;
+}
+
+h2{
+	font-family: 'Noticia Text', serif;
+	font-size: 18px;
+	color: #8293A1;
+	font-weight: bold;
+	margin-top:0px;
+
+}
+
+h3{
+	font-family:'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 19px;
+	color: #8293A1;
+	text-align: center;
+	padding-top: 15px;
+	margin-bottom:0;
+
+}
+
+
+.navbar-nav li{
+	padding-right: 20px;
+}
+
+.nav-link{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	color: #516371;
+}
+
+.nav-link:hover{
+	color: #50C4ED;
+
+}
+
+.nav-link:active{
+	color:black;
+}
+
+.nav-item a.active{
+	color: #50C4ED;
+}
+
+/* Ajustement for hamburger icon*/
+@media screen and (min-width: 750px){
+	.fa-bars{display:none;}
+}
+/*----------- END NAVIGATION------------ */
+
+/*----------- ANCHOR NAVIGATION------------ */
+#home{
+	color: red;
+
+}
+
+/*----------- END ANCHOR NAVIGATION------------ */
+
+
+/* HOME */
+/* intro-container */
+.intro-container{
+	padding: 3% 15% 0% 15%;	
+
+}
+.col-sm-4{
+	padding-bottom: 10px
+}
+
+.intro-container .col-sm-8{
+	padding-left: 45px;
+}
+
+
+.intro-container img{
+	border-radius: 50%
+}
+
+
+.intro-container h1{
+	font-size: 80px;
+}
+
+.intro-container h2{
+	font-size: 46px;	
+}
+
+
+.btn{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    border-radius: 50%;
+    position: relative;
+    top: 50%; left: 50%; right: 0;
+    font-family:'Noticia Text', serif;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.btn1{
+	background-color: #3D5495;
+
+}
+.btn2{
+	background-color: #50C4ED;
+}
+.btn3{
+	background-color: #567B96;
+}
+
+
+p{
+	padding: 5px;
+	font-size: 13px;
+	color: #8293A1;
+}
+
+/* END intro-container */
+/* END HOME */ 
+
+.header1{
+	font-size: 70px;
+	font-style: none;
+	font-family: 'Noticia Text', serif; 
+	color: #8293A1;
+}
+
+/* -------------- Social Media/ All icons -------------- */
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* -------------- END (icon) -------------- */
+
+/* -------------- Scroll indicator  -------------- */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+ 
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #3D5495;
+  width: 0%;
+}
+/* -------------- End scroll indicator  -------------- */
+
+
+/*---------Porfolio container--------*/
+.porfolio-container{
+	padding: 3% 15% 0% 15%;	
+}
+
+
+.project-container{
+	border-top: 2px solid #8293A1;
+}
+
+.project-image{
+	padding: 20px 0px;
+
+}
+
+.project-image img{
+	opacity:0.5;
+}
+
+.project-image > img:hover{
+	opacity:1;
+
+}
+
+.circle{
+	width: 125px;
+    height: 125px;
+    line-height: 125px;
+    margin-left: 100px;
+    border-radius: 50%;
+    font-family:'Noticia Text', serif;
+    text-align: center;
+    background-color: #50C4ED; 
+    color: black;
+}
+
+
+.top-container{
+	border-bottom: 1px solid #8293A1;
+	padding: 15px;
+}
+
+
+.col-sm-7{
+	padding-right: 15px;
+	padding-bottom: 30px;
+}
+
+
+.boxed{
+	display: inline-block;
+	border: 1px solid #50C4ED ;
+	color: black; text-align: center;
+	margin: auto;
+	padding: 10px 30px;
+	box-shadow: none;
+	font-family:'Noticia Text', serif;    /* --- Not reading font text, margin or padding--- */
+}
+
+.boxed:hover{
+	color: #50C4ED;
+}
+
+.boxed a{
+	color: black;
+	border-color: #50C4ED;
+}
+
+.boxed a:hover{
+	color: #50C4ED;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 720px){
+	.project-image img{
+		width: 350px; height:200px;
+	}
+
+	.project-container .row .boxed{
+		padding: 5px 20px;
+		display: flex;
+		text-align: center;
+	}
+}
+
+
+
+
+/* ---------- END porfolio container ------- */
+
+/*--------------SKILL SECTION--------------- */
+.skills-container{
+	padding: 2% 15% 0% 15%;
+}
+
+.skills-headers{
+	font-family: 'Noticia Text', serif;
+	border-bottom: 1px solid;
+	color: #8293A1;
+	font-size:16px;
+}
+
+.skills-container ul, li{   
+	margin: 0px;
+	padding:0px;
+}
+.skills-container li{
+	list-style-type: none;
+	color: white;
+	font-size: 14px;
+	padding-bottom: 2px;
+}
+
+/*--------------SKILL SECTION ENDS--------------- */
+
+
+/*------ CONTACT FORM-------*/
+
+.social-bar{
+	font-size: 30px;
+	margin: 0px 10px 15px 10px;
+}
+
+.social-bar2{
+	font-size: 30px;
+	margin: 0px 10px 15px 10px;
+	padding-left: 140px;
+}
+
+/* END contact container */
+
+
+/* ---------Notes section --------- */
+
+.notes_boxed{
+	display: inline-block;
+	border: 1px solid #50C4ED ;
+	color: black; text-align: left;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px 30px;
+	box-shadow: none;
+	font-family:'Noticia Text', serif;    /* --- Not reading font text, margin or padding--- */
+}
+
+
+
+/* --------- END Notes section --------- */
+
+
+/*FOOTER */
+
+
+.copyright-footer{
+	font-family:'Open Sans', sans-serif;
+	color: black;
+	text-align: center;
+	font-size: 14px;
+	padding: 20px 30px 20px 30px;
+	margin-bottom: 50px;
+	background-color: #50C4ED;
+
+}
+
+.end-footer{
+	background-color: #1C3142;
+	padding: 20px 30px 20px 30px;
+}
+
+.socials-container{
+	text-align: center;
+	max-width: 100%
+	background-color: pink;
+}
+
+.socials-container .social-bar{
+
+	padding-top: 90px;
+
+}
+/*END FOOTER */
+
+
+
+/* ------------------ Small Size --------------------- */
+/* left to do (size< 576 -->extra small)
+1) Resize pic 
+2)circle project title FIX 
+3) projects-> center socials github and youtube --> remove the ones that have youtube with nothing there 
+*/
+
+@media screen and (min-width:550px) and (max-width:770px){
+	.intro-container{padding: 3% 7% 0% 7%;}
+
+	.intro-container h1{font-size: 40px;} 
+	.intro-container h2{font-size: 25px;}
+	.intro-container{
+		padding-left: 
+	}
+	.intro-container img{
+		width: 180px;
+		height: 180px;
+		padding-right: 10px;
+	}
+
+	.intro-container .btn{
+		width: 100px;
+		height: 100px;
+		font-size: 13px;
+	}
+	.porfolio-container{padding: 3% 7% 0% 7%;}
+	
+
+	.project-container .top-container {
+		display:none;
+	
+	}
+	.project-container .boxed{
+		font-size: 12px
+	}
+	.project-container .social-bar2{
+		font-size: 30px;
+		padding: 0;
+
+	}
+
+}
+
+
+
+/* ----------------Medium  Size---------------------- */
+/*Left to do
+1) Resize profile pic 
+2)circle project title FIX 
+3) projects-> center socials github and youtube --> remove the ones that have youtube with nothing there
+  */
+
+
+@media screen and (min-width:760px) and (max-width:1250px){
+	.intro-container{padding: 3% 7% 0% 7%;}
+	.intro-container h1{font-size: 50px;} 
+	.intro-container h2{font-size: 35px;} 
+	.intro-container img{
+		width: 225px;
+		height: 225px;
+		padding-right: 10px;
+	}
+	.header{
+		padding-left: 0px;
+	}
+
+
+	.intro-container .btn{
+		width: 125px;
+		height: 125px;
+		font-size: 16px;
+	}
+
+	.intro-container .button-placement{
+		float: right;
+		padding-right: 50px;
+	}
+	.header1{
+		font-size: 50px;
+	}
+
+
+	.project-container .top-container{
+		padding: 0 auto;
+	}
+	.project-container .circle{
+		display:none;
+
+	}
+	.project-container img{
+		width: 260px;
+		height: 150px;
+	}
+	.project-container .boxed{
+		padding: 8px 15px;
+		font-size: 14px;
+	}
+	.project-container .social-bar2{
+		padding: 0;
+
+	}
+	
+}
