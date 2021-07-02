@@ -34,7 +34,7 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   }
 
-  
+// only show a clear blue background when sunny in that location 
   return (
     <div className= 
     {(typeof weather.main != "undefined") ? ((weather.weather[0].main === 'Clear')? 'app clear' : 'app') : 'app'}>
