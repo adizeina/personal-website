@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
 * {
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -9,27 +13,37 @@ body{
 
 }
 
+.title{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
 .app{
-  background-image: url('./assets/snowy-bg.jpg');
+  background-image: url('./assets/background.jpg');
   background-size: cover;
   background-position: bottom;
-  transition: 0.3s ease;
+  transition: 0.3s ease all;
 }
 
-.app.sunny{
-  background-image: url('./assets/sunny-bg.jpg');
+.app.clear{
+  background-image: url('./assets/clear.jpg');
+  transition: 0.3s ease all;
 }
+
 
 main {
   min-height: 100vh;
-  
   padding: 25px;
 }
 
 /* Search Box */
 search-box {
-  width: 100%;
-  margin: 0 0 75px;
+  position: relative;
+  display: inline-block;
+  padding: 2% 40%;
+  width: 60%;
+  margin: 0 0 110px;
+  
 }
 
 .search-box .search-bar{
@@ -39,8 +53,8 @@ search-box {
   appearance: none;
   border:none;
   background-color: rgba(255,255,255, 0.5);
-  border: black 1px solid;
-  box-shadow: 5px 5px black;
+  border: rgba(255,255,255, 0.5) 1px solid;
+  box-shadow: 5px 5px rgba(255,255,255, 0.5);
   font-size: 20px;
   color:black;
   border-radius: 16px 16px 16px 16px;
@@ -58,19 +72,18 @@ search-box {
 }
 
 .location-box .location{
-
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-size: 28px;
   text-align: center;
-  text-shadow: 3px 3px rgba(50,50,70,0.8)
+  
 }
 
 .location-box .date{
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   font-style: italic;
-  text-shadow: 3px 3px rgba(50,50,70,0.5)
 }
 
 .weather-box{
@@ -86,7 +99,7 @@ search-box {
   padding: 15px 25px;
 
   color: white;
-  font-size: 102px;
+  font-size: 70px;
   font-weight: 900;
   text-shadow: 3px 6px rgba(50,50,70,0.5);
   text-align: center;
@@ -99,7 +112,6 @@ search-box {
   color: white;
   font-size: 48px;
   font-weight: 700;
-  text-shadow: 3px 3px rgba(50,50,70,0.5);
   
 }
 
