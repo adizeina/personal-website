@@ -8,7 +8,8 @@
 
 	<!-- Bootstrap-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+	<!-- Animation on scroll aos-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -44,10 +45,9 @@
 	<div class ="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
-			<li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
 			<li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
 			<li class="nav-item"><a class="nav-link" href="#workexperience">WORK EXPERIENCE</a></li>
-			
+			<li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>	
 		</ul>
 	</div>
 </nav>
@@ -59,20 +59,20 @@
 <div class ="intro-container">
 	<div class="row">
 		<div class = "col-sm-4">
-			<img src="images/left.jpg" alt="My picture" class ="responsive">
+			<img src="images/zeina.jpg" alt="My picture" class ="responsive" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50" data-aos-duration = "800">
 		</div>
 		<div class ="col-sm-8">
 			<h1><div class="typewrite" data-period="2000" data-type='["HELLO WORLD!"]'><span class="wrap"></span></h1>
-			<div class = "header2"> I am a <span class="beautify-h2"> Web </span> & <span class="beautify-h2">Software</span> Developer.</div><br>
+			<div class = "header2"> My name is <span class="beautify-h2"> Zeina Adi </span></div><br>
 			<span class ="header3"> Here's a bit about me: </span>
 			<div class="row">
-				<div class = "col">
+				<div class = "col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50" data-aos-duration = "800">
 					<a href="#portfolio"><button class="btn btn1"> MY PORTFOLIO</button></a>
 				</div>
-				<div class = "col">
+				<div class = "col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50" data-aos-duration = "800">
 					<a href="#skills"><button class="btn btn2"> MY SKILLS</button></a>
 				</div>
-				<div class = "col">
+				<div class = "col" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="50" data-aos-duration = "800">
 					<a href="#workexperience"><button class="btn btn3"> MY WORK TIMELINE </button> 
 				</div>
 			</div>
@@ -88,9 +88,134 @@
 
 </div>
 
+<!---------- SKILLS CONTAINER ------------>
+<div class ="skills-container">
+	<a name="skills"><div class ="header1">SKILLS</div></a>
+	<div class ="row">
+		<div class="col-sm-4">
+			<i class="fa fa-exclamation" style= "font-size: 20px; color:#50C4ED;"></i>
+			<br>
+			<div class="skills-headers"> Technical Skills </div>
+			<br>
+			<ul>
+				<li>UI / UX Design</li>
+				<li>Data Analysis</li>
+				<li>Frontend and Backend Development</li>
+				<li>Bootstrap, Git, JQuery, React.js, Redux, Django, Ajax</li> <!-- Add Angular.js, Node.js when you learn them--> 
+				<li>Data structures & Algorithms</li>
+				<li>Programming Languages</li>
+				<li>Software testing & Debugging</li>
+				<li>OOP</li>
+				<li>AI (Artificial Intelligence)</li>
+			</ul>
+		</div>
+		<div class="col-sm-4">
+			<i class="fas fa-globe" style= "font-size: 20px; color:#50C4ED;"></i>
+			<br>
+			<div class="skills-headers"> Languages </div>
+			<br>
+			<ul>
+				<li>Python</li>
+				<li>Java</li>
+				<li>HTML and CSS</li>
+				<li>JavaScript</li>
+				<li>R, Assembly Language,TeX</li>
+				<li>C++, C#</li>
+				<li>PHP</li>
+			</ul>
+		</div>
+		<div class="col-sm-4">
+			<i class="fas fa-lightbulb" style= "font-size: 20px; color:#50C4ED;"></i>
+			<br>
+			<div class="skills-headers"> Soft Skills </div>
+			<br>
+			<ul>
+				<li>Organized and Result-Oriented</li>
+				<li>Problem Solver</li>
+				<li>Fast Learner</li>
+				<li>Critical thinker</li>
+				<li>Working well under pressure and multi-tasker</li>
+				<li>French(Native)</li>
+				<li>Cooperative & Independent</li>
+			</ul>
+			
+		</div>
+	</div>
+</div>
 
 
-<!------- PORTFOLIO SECTION --------->
+<!---------- SKILLS CONTAINER ------------>
+<!---------- WORK EXPERIENCE SECTION -------->
+<div class="timeline-container">
+	<a name="workexperience"><div class ="header1">Work Experience</div></a>
+	<div class = "timeline">
+		<ul>
+			<li>
+				<div class ="content">
+					<h3>IBM</h3>
+					<h5>Technical Writer Intern</h5>
+					<p>Job description: To be updated</p>
+					<h4>September 2021 - January 2022</h4>
+				</div>
+
+			</li>
+			<li>
+				<div class ="content">
+					<h3>The DNA Company</h3>
+					<h5>Freelance Front End Developer</h5>
+					<p>Building automated responsive reports using company owned website builder similar to Webflow and altering initial design to establish consistency. Learned how to use platform and all classes and began building my first report within the first 4 hours of being hired. Learned how to work in an extremely fast paced environment and ameliorated my time management skills. My completed reports are being used for future report templates.</p>
+					<h4>April 2021 - July 2021</h4>
+				</div>
+
+			</li>
+			<li>
+				<div class ="content">
+					<h3>CASRA Cybersecurity and Beyond</h3>
+					<h5>Wordpress Developer</h5>
+					<p> Creating the website architecture. Designing and implementing new features and functionalities as per client request.
+					Performing content governance. Ensuring high-performance and availability, and managing all technical aspects of the CMS. 
+					Helping formulate an esthetic and responsive design and transforming it into a working theme and plugin.</p>
+					<h4>March 2021 - June 2021</h4>
+				</div>
+				
+			</li>
+			<li>
+				<div class ="content">
+					<h3>Addie Academy</h3>
+					<h5>Wordpress Developer</h5>
+					<p> Meeting with client to discuss website wireframe and functionality. Designing and building the website front-end and back-end including database and server integration. Conducting website performance tests.
+					Troubleshooting content issues. Conducting WordPress training with the client. Monitoring the performance of the live website and performing content governance.</p>
+					<h4>November 2020-December 2020</h4>
+				</div>
+				
+			</li>
+			<li>
+				<div class ="content">
+					<h3>Women in Science and Computing</h3>
+					<h5>Social Media Director</h5>
+					<p> Managing social media accounts and sharing pertinent articles concerning cybersecurity, IT governance and audit and sharing useful OWASP resources. Increasing student enrollment for cyber certifications given by ISACA by 19% a month.Promoting and attending training events, boot camps related to cloud and cybersecurity and IT. Generated a 25% increase of attendees to events and an average of 42% increase of followers on the social media platforms. </p>
+					<h4>September 2019-April 2020</h4>
+				</div>
+				
+			</li>
+			<li>
+				<div class ="content">
+					<h3>ISACA Toronto</h3>
+					<h5>Social Media Manager</h5>
+					<p>Managing social media accounts and sharing pertinent articles concerning cybersecurity, IT governance and audit and sharing useful OWASP resources. Increasing student enrollment for cyber certifications given by ISACA by 19% a month. Promoting and attending training events, boot camps related to cloud and cybersecurity and IT. Generated a 25% increase of attendees to events and an average of 42% increase of followers on the social media platforms.</p>
+					<h4>November 2018- Mai 2019</h4>
+				</div>
+				
+			</li>
+			
+			<div style="clear:both;"></div>
+		</ul>
+	</div>
+</div>
+<!---------- END WORK EXPERIENCE SECTION -------->
+
+
+<!-- PORTFOLIO SECTION -->
 <div class="portfolio-container"> 
 	<a name="portfolio"><div class ="header1">PORTFOLIO</div></a>
 	<div class="row">
@@ -135,7 +260,10 @@
 	    <div class="content">
 	      <img src="images/weather.png" alt="" style="width:100%;background-color: white;">
 	      <h3>Weather App</h3>
-	      <p>Using React and OpenWeatherMap API</p> <div class ="social-bar"><a href = "https://github.com/adizeina/weather-react"><i class="fab fa-github"></i></a></div>
+	      <p>Using React and OpenWeatherMap API. Deployed using Heroku! Check it out below!</p> <div class ="social-bar"><a href = "https://github.com/adizeina/weather-react"><i class="fab fa-github"></i></a>
+		  <a href = "https://weather-react-app-z.herokuapp.com/"><i class = "fas fa-desktop"></i></a>
+
+		  </div>
 	    </div>
 	  </div>
 	  <div class="col-sm-4 extra" id = "extra" style="display: none;">
@@ -156,128 +284,6 @@
 </div>	
 
 <!---------- END PORTFOLIO CONTAINER ------------>
-
-
-<!---------- SKILLS CONTAINER ------------>
-<div class ="skills-container">
-	<a name="skills"><div class ="header1">SKILLS</div></a>
-	<div class ="row">
-		<div class="col-sm-4">
-			<i class="fa fa-exclamation" style= "font-size: 20px; color:#50C4ED;"></i>
-			<br>
-			<div class="skills-headers"> Technical Skills </div>
-			<br>
-			<ul>
-				<li>UI / UX Design</li>
-				<li>Data Analysis</li>
-				<li>Frontend and Backend Development</li>
-				<li>Bootstrap, Git, JQuery, React, Redux, Django, Ajax</li> <!-- Add Angular.js, Node.js when you learn them--> 
-				<li>Data structures & Algorithms</li>
-				<li>Programming Languages</li>
-				<li>Software testing & Debugging</li>
-				<li>OOP</li>
-				<li>AI (Artificial Intelligence)</li>
-			</ul>
-		</div>
-		<div class="col-sm-4">
-			<i class="fas fa-globe" style= "font-size: 20px; color:#50C4ED;"></i>
-			<br>
-			<div class="skills-headers"> Languages </div>
-			<br>
-			<ul>
-				<li>Python</li>
-				<li>Java</li>
-				<li>HTML and CSS</li>
-				<li>JavaScript</li>
-				<li>R, Assembly Language,TeX</li>
-				<li>C++/C/C#</li>
-				<li>PHP</li>
-			</ul>
-		</div>
-		<div class="col-sm-4">
-			<i class="fas fa-lightbulb" style= "font-size: 20px; color:#50C4ED;"></i>
-			<br>
-			<div class="skills-headers"> Soft Skills </div>
-			<br>
-			<ul>
-				<li>Organized and Result-Oriented</li>
-				<li>Problem Solver</li>
-				<li>Fast Learner</li>
-				<li>Critical thinker</li>
-				<li>Working well under pressure and multi-tasker</li>
-				<li>French(Native) & Spanish(Intermediate)</li>
-				<li>Cooperative & self-independent</li>
-			</ul>
-			
-		</div>
-	</div>
-</div>
-
-
-<!---------- SKILLS CONTAINER ------------>
-
-
-<!---------- WORK EXPERIENCE SECTION -------->
-<div class="timeline-container">
-	<a name="workexperience"><div class ="header1">Work Experience</div></a>
-	<div class = "timeline">
-		<ul>
-			<li>
-				<div class ="content">
-					<h3>Zash</h3>
-					<h5>Full Stack Developer Intern</h5>
-					<p>Designing and developing Wordpress website.</p>
-					<h4>July 2021 - Present</h4>
-				</div>
-
-			</li>
-			<li>
-				<div class ="content">
-					<h3>The DNA Company</h3>
-					<h5>Freelance Front End Developer</h5>
-					<p>Building automated responsive reports using company owned website builder similar to Webflow and altering initial design to establish consistency. Learned how to use platform and all classes and began building my first report within the first 4 hours of being hired. Learned how to work in an extremely fast paced environment and ameliorated my time management skills. My completed reports are being used for future report templates.</p>
-					<h4>April 2021 - July 2021</h4>
-				</div>
-
-			</li>
-			<li>
-				<div class ="content">
-					<h3>Women in Science and Computing</h3>
-					<h5>Social Media Director</h5>
-					<p> Managing social media accounts and sharing pertinent articles concerning cybersecurity, IT governance and audit and sharing useful OWASP resources. Increasing student enrollment for cyber certifications given by ISACA by 19% a month.Promoting and attending training events, boot camps related to cloud and cybersecurity and IT. Generated a 25% increase of attendees to events and an average of 42% increase of followers on the social media platforms. </p>
-					<h4>September 2019-April 2020</h4>
-				</div>
-				
-			</li>
-			<li>
-				<div class ="content">
-					<h3>ISACA Toronto</h3>
-					<h5>Social Media Manager</h5>
-					<p>Managing social media accounts and sharing pertinent articles concerning cybersecurity, IT governance and audit and sharing useful OWASP resources. Increasing student enrollment for cyber certifications given by ISACA by 19% a month. Promoting and attending training events, boot camps related to cloud and cybersecurity and IT. Generated a 25% increase of attendees to events and an average of 42% increase of followers on the social media platforms.</p>
-					<h4>November 2018- Mai 2019</h4>
-				</div>
-				
-			</li>
-			
-			<div style="clear:both;"></div>
-		</ul>
-	</div>
-</div>
-<!---------- END WORK EXPERIENCE SECTION -------->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!---------- FOOTER  -------->
@@ -388,11 +394,10 @@ function showProjects(){
 </script>
 <!-- End show more JS -->
 
-
-
-
-
-
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>
